@@ -9,7 +9,7 @@ import urllib.request
 # a chave vem do segredo; se ele não existir, o programa pede a chave
 CHAVE = (os.environ.get("AI_GATEWAY_API_KEY")
          or getpass.getpass("Cole sua chave e tecle Enter (ela não aparece na tela): ")).strip()
-BASE = "https://api.cloudflare.com/client/v4/accounts/47344dfa13212db01ed347b310738dae/ai/v1"
+BASE = "https://api.cloudflare.com/client/v4/accounts/5c18784dc47589a5b85628d2f0b8c268/ai/v1"
 CABECALHOS = {"Authorization": f"Bearer {CHAVE}", "Content-Type": "application/json"}
 
 ERROS = {
